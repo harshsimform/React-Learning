@@ -5,6 +5,8 @@ import Comp1 from "./Components/Comp1";
 import Comp2 from "./Components/Comp2";
 import CompA from "./ContextExample/CompA";
 import MyReducer from "./ReducerExample/MyReducer";
+import MyReducer2 from "./ReducerExample/MyReducer2";
+import MyEffect from "./EffectExample/MyEffect";
 import "./index.css";
 
 // createRoot(document.getElementById("root") as HTMLElement).render(
@@ -22,6 +24,8 @@ createRoot(rootElement).render(
     {/* <Comp1/>
     <Comp2/> */}
     {/* <CompA /> */}
-    <MyReducer />
+    {/* <MyReducer /> */}
+    {/* <MyReducer2 /> */}
+    <MyEffect />
   </React.StrictMode>
 );

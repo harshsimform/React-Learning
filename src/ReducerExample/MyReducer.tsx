@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
 
+const initialState = 0;
 const reducer = (state: number, action: any) => {
   // ✅ ui only dispatches events, logic is in the reducer
   switch (action) {
@@ -13,11 +14,11 @@ const reducer = (state: number, action: any) => {
 };
 
 const MyReducer = (): JSX.Element => {
-  const [count, dispatch] = useReducer(reducer, 0);
+  const [count, dispatch] = useReducer(reducer, initialState);
 
   return (
     <div>
-      Count: {count}
+      <h1>Count: {count}</h1>
       <button onClick={() => dispatch("increment")}>Increment</button>
       <button onClick={() => dispatch("decrement")}>Decrement</button>
     </div>
