@@ -7,6 +7,9 @@ import CompA from "./ContextExample/CompA";
 import MyReducer from "./ReducerExample/MyReducer";
 import MyReducer2 from "./ReducerExample/MyReducer2";
 import MyEffect from "./EffectExample/MyEffect";
+// import ClassComp from "./ClassVsFuncComponents/ClassComp";
+// import FunctionalComp from "./ClassVsFuncComponents/FunctionalComp";
+import ClassErrorBoundary from "./ClassVsFuncComponents/ClassErrorBoundary";
 import "./index.css";
 
 // createRoot(document.getElementById("root") as HTMLElement).render(
@@ -26,6 +29,9 @@ createRoot(rootElement).render(
     {/* <CompA /> */}
     {/* <MyReducer /> */}
     {/* <MyReducer2 /> */}
-    <MyEffect />
+    {/* <MyEffect /> */}
+    {/* <ClassComp name="Class Component" /> */}
+    {/* <FunctionalComp name="Functional Component" /> */}
+    {/* <ClassErrorBoundary children="harsh" /> */}
   </React.StrictMode>
 );

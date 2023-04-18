@@ -1,3 +1,15 @@
+// Think of the useEffect Hook as a partial replacement for React lifecycle events. The useEffect Hook can replicate the behavior of componentDidMount, componentDidUpdate and componentWillUnmount methods.
+
+// In other words, you can respond to changes in any component that contains the useEffect Hook.
+
+//? Some common use cases of useEffect are:
+
+// Add an event listener for a button
+// Data fetching from API when component mounts
+// Perform an action when state or props change
+// Clean up event listeners when the component unmounts
+// In each case above, useEffect is used in place of a lifecycle method.
+
 import React, { useState, useEffect } from "react";
 
 interface Data {

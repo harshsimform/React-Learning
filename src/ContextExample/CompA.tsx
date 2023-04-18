@@ -9,7 +9,7 @@ import CompB from "./CompB";
 
 const Id = createContext<number>(0);
 const Name = createContext<string>("");
-const CompA = (): JSX.Element => {
+const CompA: React.FC = (): JSX.Element => {
   return (
     <>
       <Id.Provider value={21}>
